@@ -1,0 +1,44 @@
+.slider-container {
+  margin: 2.333em 0em;
+  padding: 0 3.000em;
+  input {
+    width: 100%;
+   
+  }
+  .slider {
+    appearance: none;
+    width: 100%; 
+    height: 10px; 
+    background: $LightGrayishBlue; 
+    outline: none; 
+    border-radius: 5px;
+    &:hover {
+      opacity: 1;
+    }
+  }
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 100%;
+  background: url('/images/icon-slider.svg');
+  text-align: center;
+  background-repeat: no-repeat;
+  background-color: $StrongCyan;
+  box-shadow: 0px 2px 20px $StrongCyan;
+  
+  background-position: center;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 40px;
+  height: 42px;
+  line-height: 42px;
+  border: 0;
+  cursor: pointer;
+}

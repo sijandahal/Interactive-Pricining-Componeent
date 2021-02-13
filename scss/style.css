@@ -1,0 +1,397 @@
+/*
+This file is used to contain all abstracts imports.
+Files inside this folder can contain abstract settings,
+helpers or functions. They have no direct output.
+*/
+/*
+This file is used to contain all base imports.
+Files inside this folder can contain global styles used in
+the project.
+*/
+/*
+This file can be used to overwrite any normailze settings.
+*/
+html, body {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html *, body * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background: url(/images/bg-pattern.svg) #fafbff;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 100vh;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+html {
+  font-family: 'Manrope', sans-serif;
+  font-weight: normal;
+  line-height: 1.5;
+  font-size: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (min-width: 1080px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+  margin: 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 1.867em;
+  color: #293356;
+  line-height: 1.8;
+}
+
+p {
+  margin: 0;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*
+This file is used to contain all component imports.
+Files inside this folder should contain all styles relating
+to a reusable component.
+*/
+.main {
+  max-width: 541px;
+  width: 100%;
+  margin: auto;
+}
+
+.container {
+  max-width: 541px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2.89em 0 1.333em 0;
+}
+
+.container .top-bar .pageviews {
+  text-transform: uppercase;
+  color: #858fad;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.container .months p {
+  color: #858fad;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.container .months p .dollar {
+  font-size: 2.533em;
+  font-weight: 800;
+  color: #293356;
+}
+
+/*
+This file is used to contain all layout imports.
+Files inside this folder should contain all styles relating
+to layouts.
+*/
+.heading {
+  background: url(/images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-size: 146px;
+  background-position: top 73px center;
+  text-align: center;
+  padding-top: 6.6em;
+  padding-bottom: 6em;
+}
+
+.heading h1 {
+  font-weight: 800;
+}
+
+.heading p {
+  color: #858fad;
+  margin: 0;
+  margin-top: 4px;
+}
+
+.top-bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 3.00em 0 3.00em;
+}
+
+.slider-container {
+  margin: 2.333em 0em;
+  padding: 0 3.000em;
+}
+
+.slider-container input {
+  width: 100%;
+}
+
+.slider-container .slider {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  width: 100%;
+  height: 10px;
+  background: #cdd7ee;
+  outline: none;
+  border-radius: 5px;
+}
+
+.slider-container .slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 40px;
+  height: 42px;
+  line-height: 42px;
+  border-radius: 100%;
+  background: url("/images/icon-slider.svg");
+  text-align: center;
+  background-repeat: no-repeat;
+  background-color: #10d5c2;
+  -webkit-box-shadow: 0px 2px 20px #10d5c2;
+          box-shadow: 0px 2px 20px #10d5c2;
+  background-position: center;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 40px;
+  height: 42px;
+  line-height: 42px;
+  border: 0;
+  cursor: pointer;
+}
+
+.toggle-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0px 0 10px 0;
+  margin-left: 100px;
+}
+
+.toggle {
+  visibility: hidden;
+}
+
+.label {
+  background-color: #d0d0d0;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 15px 0;
+  width: 40px;
+  height: 20px;
+  position: relative;
+}
+
+.label:hover {
+  background-color: #a5f3eb;
+}
+
+.toggle:checked + .label {
+  background-color: #a5f3eb;
+}
+
+.ball {
+  background: #fff;
+  height: 12px;
+  width: 12px;
+  border-radius: 100px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-animation: slideOff 0.3s linear forwards;
+          animation: slideOff 0.3s linear forwards;
+}
+
+.toggle:checked + .label .ball {
+  -webkit-animation: slideOn 0.3s linear forwards;
+          animation: slideOn 0.3s linear forwards;
+}
+
+@-webkit-keyframes slideOn {
+  0% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+  50% {
+    -webkit-transform: translateX(20px) scale(1.2);
+            transform: translateX(20px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translateX(20px) scale(1.2);
+            transform: translateX(20px) scale(1.2);
+  }
+}
+
+@keyframes slideOn {
+  0% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+  50% {
+    -webkit-transform: translateX(20px) scale(1.2);
+            transform: translateX(20px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translateX(20px) scale(1.2);
+            transform: translateX(20px) scale(1.2);
+  }
+}
+
+@-webkit-keyframes slideOff {
+  0% {
+    -webkit-transform: translateX(40px) scale(1);
+            transform: translateX(40px) scale(1);
+  }
+  50% {
+    -webkit-transform: translateX(20px) scale(1.2);
+            transform: translateX(20px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+}
+
+@keyframes slideOff {
+  0% {
+    -webkit-transform: translateX(40px) scale(1);
+            transform: translateX(40px) scale(1);
+  }
+  50% {
+    -webkit-transform: translateX(20px) scale(1.2);
+            transform: translateX(20px) scale(1.2);
+  }
+  100% {
+    -webkit-transform: translateX(0) scale(1);
+            transform: translateX(0) scale(1);
+  }
+}
+
+.billings {
+  padding-top: 0.5em;
+  padding-bottom: 2.067em;
+  border-bottom: 1px solid #cdd7ee;
+}
+
+.billings span {
+  font-size: 0.800em;
+  color: #858fad;
+}
+
+.discount-btn {
+  color: #ff8c66;
+  background: #feece7;
+  padding: 4px 8px;
+  margin-left: 0.800em;
+  border-radius: 50px;
+  font-size: 0.667em;
+}
+
+.features {
+  padding: 0 3.00em;
+}
+
+.features__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.features__list ul li:not(:last-child) {
+  margin-bottom: 0.48em;
+}
+
+.features__list ul li a {
+  font-size: 12px;
+  color: #cdd7ee;
+}
+
+.features__list ul li a svg {
+  margin-right: 1em;
+}
+
+.features__btn {
+  background-color: #293356;
+  color: #cdd7ee;
+  padding: 0.69em 2.5em;
+  border-radius: 100px;
+}
+/*# sourceMappingURL=style.css.map */

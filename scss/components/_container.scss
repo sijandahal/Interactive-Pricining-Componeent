@@ -1,0 +1,36 @@
+.main{
+  max-width: 541px;
+  width: 100%;
+  // margin: 4.267em auto 9.000em auto;
+  margin: auto;
+}
+
+.container {
+  max-width: 541px;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 2.89em 0 1.333em 0;
+  .top-bar {
+     .pageviews {
+        text-transform: uppercase;
+        color: $GrayishBlue;
+        font-weight: 600;
+        letter-spacing : 2px;
+     } //end of page views
+  } //emd of top bar
+
+   .months {
+      p {
+        color: $GrayishBlue;
+        font-weight: 600;
+        letter-spacing : 1px;
+
+        .dollar {
+          font-size: 2.533em;
+          font-weight: 800;
+          color:$DarkDesaturatedBlue;;
+        }
+      }
+   } //end of months
+}

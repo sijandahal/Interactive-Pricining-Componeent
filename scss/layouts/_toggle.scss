@@ -1,0 +1,92 @@
+.toggle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 0 10px 0;
+  margin-left: 100px;
+}
+
+.toggle {
+  visibility: hidden;
+}
+
+.label {
+  background-color: #d0d0d0;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 15px 0;
+  width: 40px;
+  height: 20px;
+  position: relative;
+  &:hover {
+    background-color: $SoftCyan;
+  }
+}
+
+.toggle:checked + .label {
+  background-color: $SoftCyan;
+}
+
+.ball {
+  background: #fff;
+  height: 12px;
+  width: 12px;
+  border-radius: 100px;
+  position: absolute;
+  top: 3px;
+  left: 3px;
+  align-items: center;
+  justify-content: center;
+  animation: slideOff 0.3s linear forwards;
+}
+
+.toggle:checked + .label .ball {
+  animation: slideOn 0.3s linear forwards;
+}
+
+@keyframes slideOn {
+  0% {
+    transform: translateX(0) scale(1);
+  }
+  50% {
+    transform: translateX(20px) scale(1.2);
+  }
+  100% {
+    transform: translateX(20px) scale(1.2);
+  }
+}
+
+@keyframes slideOff {
+  0% {
+    transform: translateX(40px) scale(1);
+  }
+  50% {
+    transform: translateX(20px) scale(1.2);
+  }
+  100% {
+    transform: translateX(0) scale(1);
+  }
+}
+
+.billings {
+  padding-top: 0.5em;
+  padding-bottom: 2.067em;
+  border-bottom: 1px solid $LightGrayishBlue;
+
+  span {
+    font-size: 0.800em;
+    color: $GrayishBlue;
+  }
+}
+
+.discount-btn {
+  color : $LightRed;
+  background: $LightGrayishRed;
+  padding : 4px 8px;
+  margin-left : 0.800em;
+  border-radius : 50px;
+  font-size: 0.667em;
+
+}
+

@@ -1,0 +1,32 @@
+.features {
+  padding : 0 3.00em;
+
+  &__list {
+    display: flex;
+    align-items : center;
+    justify-content  : space-between;
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 0.48em;
+        }
+        a {
+           font-size: 12px;
+          svg {
+            margin-right : 1em; 
+          }
+          color : $LightGrayishBlue;
+        }
+      }
+    }
+  }
+
+  //end of list
+
+  &__btn {
+    background-color: $DarkDesaturatedBlue;
+    color: $LightGrayishBlue;
+    padding: 0.69em 2.5em;
+    border-radius: 100px;
+  }
+}

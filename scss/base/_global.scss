@@ -1,0 +1,29 @@
+html, body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+
+   * {
+     box-sizing: border-box;
+   }
+}
+
+body {
+  background: url(/images/bg-pattern.svg) $VeryPaleBlue;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: top;
+  min-height: 100vh;
+  height: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding: 0;
+  li {
+    list-style : none;
+  }
+}

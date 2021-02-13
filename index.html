@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="./scss/style.css">
+  
+  <title>Frontend Mentor | Interactive pricing component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+   <div class="main">
+     <div class="heading">
+       <h1>  Simple, traffic-based pricing</h1>
+       <p>  Sign-up for our 30-day trial. No credit card required. </p>
+     </div>
+     <div class="container">
+       <div class="top-bar">
+         <div class="pageviews">
+           <p> <span class="views"> 100K </span> PageViews</p>
+         </div>
+         <div class="months">
+        <p>  <span class="dollar">$16.00</span> /month </p>
+         </div>
+       </div>
+       <div class="slider-container">
+       <input type="range" min="0" max="100" step = '25' class = "slider" value = '25'>
+      </div>
+      <!-- End of slider conntainer -->
+      <div class="billings">
+        <div class="toggle-container">
+          <span>Monthly Billing</span>
+          <input type="checkbox" name="good" id="good" class="toggle" />
+          <label for="good" class="label"><div class="ball"></div></label>
+          <span>Yearly Billing</span>
+          <a href="#" class = "btn discount-btn">25% discount</a>
+        </div>
+      </div> 
+      <!-- //end of billings -->
+       <div class="features">
+         <div class="features__list">
+           <ul>
+             <li>
+               <a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>  Unlimited websites </a>
+               <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>  100% data ownership </a></li>
+
+               <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" width="9" height="8"><path fill="none" stroke="#10D8C4" stroke-width="2" d="M1 4.134l1.907 1.908L7.949 1"/></svg>   Email reports </a></li>
+               
+             </li>
+           </ul>
+           <div class="features__button">
+             <a href="#" class = "btn features__btn" > Start my trial</a>
+           </div>
+         </div>
+       </div>
+     </div>
+
+     <!-- End of container -->
+   </div>
+   <!-- End of main -->
+
+ 
+ 
+ 
+
+ 
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+
+  <script src="./main.js"></script>
+
+</body>
+</html>
