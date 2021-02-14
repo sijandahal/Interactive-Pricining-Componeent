@@ -28,5 +28,10 @@
     color: $LightGrayishBlue;
     padding: 0.69em 2.5em;
     border-radius: 100px;
+    transition: .3s ease;
+
+    &:hover {
+      color: $White;
+    }
   }
 }

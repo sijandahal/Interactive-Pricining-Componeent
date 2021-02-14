@@ -1,0 +1,80 @@
+@media only screen and (max-width: $middleBreakpoint) {
+  body {
+    background-size: unset;
+  }
+  .main {
+    padding: 0em 1.667em;
+  }
+
+  .heading {
+    padding-bottom: 4.5em;
+    h1 {
+      font-size: 1.2em;
+    }
+    p {
+      font-size: 0.867em;
+      max-width: 13.23em;
+      margin: auto;
+    }
+  } //end of heading
+
+  .top-bar,
+  .toggle-container {
+    padding: 0 1.4em;
+  }
+  .slider-container {
+    padding: 0;
+    margin-bottom: 1.89em;
+  }
+  .toggle-container {
+    margin-left: 0;
+  }
+  .desktop,
+  .toggle {
+    display: none;
+  }
+  .features__list {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0.6em 0;
+  }
+  .features__button {
+    margin-top: 1.9em;
+  }
+  .main-header{
+    padding: 0 1.4em;
+  }
+  .billings {
+    margin-top: 1.8em;
+  } 
+}
+
+@media only screen and (min-width: $middleBreakpoint) {
+  .mobile {
+    display: none;
+  }
+
+  .main-header {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+  }
+
+  .pageviews {
+    grid-row: 1;
+  } 
+
+  .slider-container {
+    grid-column: 1/4;
+    width: 100%;
+  }
+  .months {
+    grid-column: 2/4;
+    grid-row: 1;
+  }
+  .container .months p {
+    justify-content: flex-end;
+  }
+}
